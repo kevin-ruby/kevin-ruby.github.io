@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,8 +21,8 @@ hr{
  display: block;
  margin-top: 0.5em;
  margin-bottom: .5em;
- margin-left: 260px;
- margin-right: 260px;
+ margin-left: auto;
+ margin-right: auto;
  border-style: inset;
  border-width: 1px;
  border-color: #b3ffe6;
@@ -59,7 +60,7 @@ div.static {
 }
 
 .sidenav a:hover {
-  color: #000000;
+  color: #e6e6e6;
 }
 
 .sidenav .closebtn {
@@ -71,7 +72,7 @@ div.static {
 }
 
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 2s;
   padding: 16px;
 }
 
@@ -118,11 +119,14 @@ div.static {
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.opacity = 0;
+
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.opacity = 1;
 }
 </script>
 
