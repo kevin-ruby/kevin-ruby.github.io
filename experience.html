@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+header {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 2s ease-out 0s 1 slideInFromRight;
+
+  background: #404040;
+  padding: 10px;
+}
+
+
+
 body {
   font-family: 'Julius Sans One';font-size: 18px;
   background-color: #404040;
   color: #F0F8FF;
 
 }
+
 h1 {
   font-family: 'Julius Sans One';font-size: 22px;
   text-align: center;
   font-size: 80px;
 }
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #b3ffe6;
+  text-align: left;
+  font-size:40px;
+
+
+}
 hr{
  display: block;
- margin-top: 1.5em;
- margin-bottom: 1.5em;
+ margin-top: 3em;
+ margin-bottom: 3em;
  margin-left: auto;
  margin-right: auto;
  border-style: inset;
  border-width: 1px;
  border-color: #b3ffe6;
 }
+div.time{
+  text-indent: 10%;
+  text-align: right;
+  padding:10px;
+}
+div.para{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1vw;
+
+  text-align: left;
+
+}
+
 div.relative {
   position: relative;
   left: 280px;
 }
 div.static {
   position: static;
-
 }
 .fa:hover {
     color: #00ffaa !important;
@@ -45,6 +85,10 @@ a:hover{
 img {
 
   border-radius: 20%;
+}
+.responsive {
+  width: 20%;
+  height: auto;
 }
 
 
@@ -106,23 +150,44 @@ img {
   <a href="#Skills"><i class ="fa fa-code"></i>  Skills</a>
   <a href="#Skills"><i class ="fa fa-cutlery"></i>  Raven</a>
 </div>
-
+<header>
 <div id="main">
+
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
   <center>
-  <h1>test</h1>
-
+  <h1 style="font-size:8vw;">Experience</h1>
   </center>
+  <br/>
+  <br/>
+  <h3 style="font-size:3vw;">Life Time Athletic</h3>
 
-  </div>
+  <p style="font-size:1.5vw"><span style="float:right; font-size:1.5vw">June 2018 - Present</span> Member Services Assiociate </p>
+
+  <img style="border-radius:0%; position:absolute; right:0px "  src="lifetime.png" alt="Lifetime" class="responsive" width="300" height="100">
+  <li style="font-size:1.5vw"> Welcome Current and prospective members into club</li>
+  <li style="font-size:1.5vw"> Assist members with account options</li>
+  <li style="font-size:1.5vw"> Ensure a positive club experience for all</li>
+  <br/>
+  <br/>
+  <hr>
+  <h3 style="font-size:3vw;">Lakeshore Athletic Club</h3>
+
+  <p style="font-size:1.5vw"><span style="float:right; font-size:1.5vw">January 2017 - August 2017</span> Member Services</p>
+
+  <img style="border-radius:0%; position:absolute; right:10px "  src="lakeshore.jpg" alt="Lifetime" class="responsive" width="300" height="100">
+  <li style="font-size:1.5vw"> Transition accounts from Lakeshore to Life Time systems</li>
+  <li style="font-size:1.5vw"> Provide assistance for members included in transition</li>
+  <li style="font-size:1.5vw"> Prepare club for sale to Life Time</li>
+
+  <hr>
 </div>
+</header>
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "500px";
   document.getElementById("main").style.opacity = 0.1;
-
 }
 
 function closeNav() {
