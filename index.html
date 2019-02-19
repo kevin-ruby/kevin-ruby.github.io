@@ -20,8 +20,8 @@ h1 {
 }
 hr{
  display: block;
- margin-top: 0.5em;
- margin-bottom: .5em;
+ margin-top: 1.5em;
+ margin-bottom: 1.5em;
  margin-left: auto;
  margin-right: auto;
  border-style: inset;
@@ -35,6 +35,16 @@ div.relative {
 div.static {
   position: static;
 
+}
+.fa:hover {
+    color: #00ffaa !important;
+}
+a:hover{
+  color: #00ffaa;
+}
+img {
+
+  border-radius: 10%;
 }
 
 
@@ -52,6 +62,7 @@ div.static {
 }
 
 .sidenav a {
+  text-align:left;
   position: relative;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -63,7 +74,7 @@ div.static {
 }
 
 .sidenav a:hover {
-  color: #e6e6e6;
+  color: #cccccc;
 }
 
 .sidenav .closebtn {
@@ -98,6 +109,7 @@ div.static {
 <div id="main">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
   <center>
+  <img src="me.jpg" alt="A picture of a handsome man" width="250" height="250">
   <h1> Kevin <span style="color:#b3ffe6">Ruby</span> </h1>
   <hr>
   <div class="static">
@@ -107,11 +119,13 @@ div.static {
     <i class="fa fa-ellipsis-h fa-lg"></i>
     &nbsp;&nbsp;&nbsp;(303)859-9791
     </center>
+    <br/>
+    <br/>
 
-    <i style="color:#b3ffe6" class="fa fa-github fa-4x"></i>
+    <a href="https://github.com/kevin-ruby"> <i style="color:#b3ffe6" class="fa fa-github fa-4x"></i></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <i style="color:#b3ffe6" class="fa fa-linkedin fa-4x"></i>
+    <a href="https://www.linkedin.com/in/kevin-ruby/"> <i style="color:#b3ffe6" class="fa fa-linkedin fa-4x"></i></a>
 
   </center>
 
@@ -122,7 +136,7 @@ div.static {
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "500px";
-  document.getElementById("main").style.opacity = 0;
+  document.getElementById("main").style.opacity = 0.1;
 
 }
 
