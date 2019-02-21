@@ -107,10 +107,24 @@ img {
   transition: margin-left .5s;
   padding: 16px;
 }
+div.menu{
+
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+@media screen and (min-width: 701px) {
+  div.menu{
+    font-size: 40px;
+  
+}
+
+@media screen and (max-width: 700px) {
+  div.menu{
+    font-size: 20px;
+ 
 }
 </style>
 </head>
@@ -127,7 +141,7 @@ img {
 
 <header>
 <div id="main">
-  <span style="font-size:4.5vw;color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
+  <div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span></div>
   <br/>
   <br/>
   <center>
