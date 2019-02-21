@@ -8,63 +8,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@keyframes slideInFromRight {
+@keyframes slideInFromLeft {
     0% {
-        transform: translateX(100%);
+        opacity:-20;
     }
     100% {
-        transform: translateX(0);
+        opacity:1;
     }
 }
 header {
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: .4s ease-out 0s 1 slideInFromRight;
+  animation: 2s ease-out 0s 1 slideInFromLeft;
 
   background: #404040;
   padding: 10px;
 }
 
-
-
 body {
   font-family: 'Julius Sans One';
   background-color: #404040;
-  color: #F0F8FF;
-
+  color: #F0F8FF
 }
 
-h1 {
-  font-family: 'Julius Sans One';
-  text-align: center;
-}
 
-hr{
- display: block;
- margin-top: 3em;
- margin-bottom: 3em;
- margin-left: auto;
- margin-right: auto;
- border-style: inset;
- border-width: 1px;
- border-color: #b3ffe6;
-
-}
-div.time{
-  text-indent: 10%;
-  text-align: right;
-  padding:10px;
-}
-div.para{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1vw;
-  text-align: left;
-
-}
-
-div.relative {
-  position: relative;
-  left: 280px;
-}
 div.static {
   position: static;
 }
@@ -74,15 +40,10 @@ div.static {
 a:hover{
   color: #00ffaa;
 }
-img {
-
-  border-radius: 20%;
-}
 .responsive {
   width: 25%;
-  height: auto;
+  height: 25%;
 }
-
 
 .sidenav {
   height: 100%;
@@ -106,7 +67,6 @@ img {
   color: #404040;
   display: block;
 
-
 }
 
 .sidenav a:hover {
@@ -125,6 +85,35 @@ img {
   transition: margin-left .5s;
   padding: 16px;
 }
+
+
+
+* {
+  box-sizing: border-box;
+}
+section {
+  color: #fff;
+  text-align: center;
+}
+div {
+  height: 100%;
+}
+
+
+
+
+
+/* Pattern styles */
+div.container {
+  
+}
+
+div.left-half {
+  
+}
+div.right-half {
+  
+}
 div.menu{
 
 }
@@ -138,29 +127,55 @@ div.title {
   padding-bottom: 20px;
 }
 div.desc{
-  padding-right: 20px;
+
 }
 @media screen and (min-width: 701px) {
+  
   div.menu{
-    font-size: 40px;
+    font-size: 20px;
   }
   div.example  {
-    font-size: 90px;
+    font-size: 80px;
   }
   div.name {
-    font-size: 40px;
+    font-size: 30px;
+    padding-left: 20px
   }
   div.title{
-    font-size: 30px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right:20px;
   }
   div.desc{
-    font-size: 20px;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 30px
+  }
+  div.container {
+  display: table;
+  width: 100%;
+  }
+  div.left-half {
+  background-color: #404040;
+  background-image: url("circleclock_work.svg");
+  background-size: 800px 800px;
+  position: fixed;
+  left: 0px;
+  width: 35%;
+  }
+  div.right-half {
+  background-color: #404040;
+  position: absolute;
+  right: 0px;
+  width: 65%;
+  padding-right: 20px;
   }
 }
 
 @media screen and (max-width: 700px) {
   div.menu{
     font-size: 20px;
+    position:absolute;
   }
   div.example  {
     font-size: 50px;
@@ -172,42 +187,59 @@ div.desc{
     font-size: 15px;
   }
   div.desc{
-    font-size: 15px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right:20px;
   }
-}
+  div.right-half {
+  background-color: #404040;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+}   
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 </style>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html"><i class="fa fa-id-card"> </i> Kevin Ruby</a>
-  <a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a>
-  <a href="#Education"><i class="fa fa-graduation-cap"></i> Education</a>
-  <a href="#Skills"><i class ="fa fa-code"></i>  Skills</a>
-  <a href="#Skills"><i class ="fa fa-cutlery"></i>  Raven</a>
+  <a href="index.html"><i class="fa fa-id-card"> </i>&nbsp;Kevin Ruby</a>
+  <a href="experience.html"><i class="fa fa-briefcase"></i>&nbsp;Experience</a>
+  <a href="#Education"><i class="fa fa-graduation-cap"></i>&nbsp;Education</a>
+  <a href="#Skills"><i class ="fa fa-code"></i>&nbsp;Skills</a>
+  <a href="#Skills"><i class ="fa fa-cutlery"></i>&nbsp;Raven</a>
 </div>
 <header>
 <div id="main">
+  <div class="menu"style="color: #b3ffe6; cursor:pointer" onclick="openNav()"> &#9776; Menu</div>
+  
+  <section class="container">
+  <div class="left-half">
+  </div>
+  <div class="right-half">
+    <article>
+      <center>
+      <div class="example">Experience</div>
+      </center>
+      <br/>
+      <br/>
+      <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Life Time Athletic</div>
 
-  <div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span></div>
-  <br/>
-  <br/>
-  <center>
-  <div class="example">Experience</div>
-  </center>
-  <br/>
-  <br/>
+      <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">June 2018 - Present</span> Member Services Assiociate </div>
 
-  <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Life Time Athletic</div>
-
-  <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">June 2018 - Present</span> Member Services Assiociate </div>
-
-  <img style="border-radius:0%; position:static; float:right; right:0px "  src="lifetime.png" alt="Lifetime" class="responsive" width="300" height="100">
+  <img style="border-radius:0%; position:static; float:right; right:0px; "  src="lifetime.png" alt="Lifetime" class="responsive" width="300" height="100">
   <div class="desc">
   <li> Welcome Current and prospective members into club</li>
   <li> Assist members with account options</li>
@@ -222,16 +254,18 @@ div.desc{
   <li> Transition accounts from Lakeshore to Life Time systems</li>
   <li> Provide assistance for members included in transition</li>
   <li> Prepare club for sale to Life Time</li>
+
+
+    </article>
   </div>
- 
-  <hr>
+</section>
 </div>
 </header>
 
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "500px";
+  document.getElementById("main").style.marginLeft = "35%";
   document.getElementById("main").style.opacity = 0.1;
 }
 

@@ -18,7 +18,7 @@
 }
 header {
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 0s ease-out 0s 1 slideInFromRight;
+  animation: .4s ease-out 0s 1 slideInFromRight;
 
   background: #404040;
   padding: 10px;
@@ -37,12 +37,6 @@ h1 {
   font-family: 'Julius Sans One';
   text-align: center;
 }
-h3 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #b3ffe6;
-  text-align: left;
-  test-size:60px;
-}
 
 hr{
  display: block;
@@ -53,18 +47,14 @@ hr{
  border-style: inset;
  border-width: 1px;
  border-color: #b3ffe6;
+
 }
 div.time{
   text-indent: 10%;
   text-align: right;
   padding:10px;
 }
-div.para{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1vw;
-  text-align: left;
 
-}
 
 div.relative {
   position: relative;
@@ -84,7 +74,7 @@ img {
   border-radius: 20%;
 }
 .responsive {
-  width: 25%;
+  width: 30%;
   height: auto;
 }
 
@@ -110,8 +100,6 @@ img {
   font-size: 25px;
   color: #404040;
   display: block;
-
-
 }
 
 .sidenav a:hover {
@@ -143,14 +131,14 @@ div.title {
   padding-bottom: 20px;
 }
 div.desc{
-
+  padding-right: 20px;
 }
 @media screen and (min-width: 701px) {
   div.menu{
     font-size: 40px;
   }
   div.example  {
-    font-size: 90px;
+    font-size: 80px;
   }
   div.name {
     font-size: 40px;
@@ -164,7 +152,21 @@ div.desc{
 }
 
 @media screen and (max-width: 700px) {
-  
+  div.menu{
+    font-size: 20px;
+  }
+  div.example  {
+    font-size: 50px;
+  }
+  div.name {
+    font-size: 25px;
+  }
+  div.title{
+    font-size: 15px;
+  }
+  div.desc{
+    font-size: 15px;
+  }
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -194,9 +196,9 @@ div.desc{
   <br/>
   <br/>
 
-  <h3>Life Time Athletic</h3>
+  <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Life Time Athletic</div>
 
-  <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="float:right;">June 2018 - Present</span> Member Services Assiociate </div>
+  <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">June 2018 - Present</span> Member Services Assiociate </div>
 
   <img style="border-radius:0%; position:static; float:right; right:0px "  src="lifetime.png" alt="Lifetime" class="responsive" width="300" height="100">
   <div class="desc">
@@ -205,7 +207,7 @@ div.desc{
   <li> Ensure a positive club experience for all</li>
   </div>
   <hr>
-  <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakeshore Athletic club</div>
+  <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakeshore Athletic Club</div>
 
   <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="float:right;">January 2017 - August 2017</span> Member Services</div>
   <img style="border-radius:0%; position:static; float:right; right:10px;"  src="lakeshore.jpg" alt="Lifetime" class="responsive" width="300" height="100">
@@ -214,7 +216,8 @@ div.desc{
   <li> Provide assistance for members included in transition</li>
   <li> Prepare club for sale to Life Time</li>
   </div>
- 
+  
+  <br/>
   <hr>
 </div>
 </header>
