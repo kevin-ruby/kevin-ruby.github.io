@@ -30,7 +30,6 @@ body {
   color: #F0F8FF
 }
 
-
 div.static {
   position: static;
 }
@@ -85,7 +84,7 @@ a:hover{
   padding: 16px;
 }
 
-/*following allow page to be slipt for image , text*/
+
 * {
   box-sizing: border-box;
 }
@@ -126,6 +125,7 @@ div.desc{
 
 /*next two added for simplicity when viewing on mobile*/
 @media screen and (min-width: 701px) {
+  
   div.menu{
     font-size: 20px;
   }
@@ -152,8 +152,8 @@ div.desc{
   }
   div.left-half {
   background-color: #404040;
-  background-image: url("circleclock_work.svg");
-  background-size: 800px 800px;
+  background-image: url("grad_edu.svg");
+  background-size: 800px 650px;
   position: fixed;
   left: 0px;
   width: 35%;
@@ -170,6 +170,7 @@ div.desc{
 @media screen and (max-width: 700px) {
   div.menu{
     font-size: 20px;
+    
   }
   div.example  {
     font-size: 50px;
@@ -195,6 +196,8 @@ div.desc{
   padding-right: 20px;
   }
 }   
+
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -203,6 +206,7 @@ div.desc{
 </style>
 </head>
 <body>
+
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html"><i class="fa fa-id-card"> </i>&nbsp;Kevin Ruby</a>
@@ -211,42 +215,39 @@ div.desc{
     <a href="#Skills"><i class ="fa fa-code"></i>&nbsp;Skills</a>
   </div>
   <header>
-      <div id="main">
+    <div id="main">
         <div class="menu"style="color: #b3ffe6; cursor:pointer" onclick="openNav()"> &#9776; Menu</div>
-      
-        <section class="container">
-          <!-- house image -->
-          <div class="left-half">
-          </div>
-          
-          <div class="right-half">
-            <article>
-              <center>
-                <div class="example">Experience</div>
-              </center>
-              <br/>
-              <br/>
-              <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Life Time Athletic
-              </div>
-              <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">June 2018 - Present</span>Member Services Assiociate 
-              </div>
-              <img style="border-radius:0%; position:static; float:right; right:0px; "  src="lifetime.png" alt="Lifetime" class="responsive" width="300" height="100">
-              <div class="desc">
-                <li> Welcome Current and prospective members into club</li>
-                <li> Assist members with account options</li>
-                <li> Ensure a positive club experience for all</li>
-              </div>
-              <hr>
-              <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Lakeshore Athletic Club
-              </div>
-              <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="float:right;">January 2017 - August 2017</span> Member Services</div>
-              <img style="border-radius:0%; position:static; float:right; right:10px;"  src="lakeshore.jpg" alt="Lifetime" class="responsive" width="300" height="100">
-              <div class="desc">
-                <li> Transition accounts from Lakeshore to Life Time systems</li>
-                <li> Provide assistance for members included in transition</li>
-                <li> Prepare club for sale to Life Time</li>
-            </article>
-          </div>
+        
+      <section class="container">
+        <div class="left-half">
+        </div>
+
+        <div class="right-half">
+          <article>
+            <center>
+              <div class="example">Skills</div>
+            </center>
+            <br/>
+            <br/>
+            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">University of Colorado at Boulder
+            </div>
+            <hr>
+            <i class="fa fa-terminal fa-5x"></i>
+            <hr>
+            <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">Expected May 2021</span> B.S. Computer Science, College of Engineering </div>
+
+            <div class="desc">
+              <li>Computer Science Technical GPA: 3.850</li>
+            </div>
+            <br/>
+            <br/>
+            <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="float:right;">Expected May 2021</span> Business Minor, Leeds School of Business
+            </div>
+            <div class="desc">
+              <li> Emphasis in Business Analytics</li>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   </header>
@@ -264,5 +265,10 @@ div.desc{
       document.getElementById("main").style.opacity = 1;
     }
   </script>
+
+
+
+
+
 </body>
 </html>

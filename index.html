@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@keyframes slideInFromLeft {
+/*Add opening opacity effect*/
+@keyframes opacityEffect {
     0% {
         opacity:-20;
     }
@@ -16,9 +17,8 @@
     }
 }
 header {
-  /* This section calls the slideInFromLeft animation we defined above */
-  animation: 2s ease-out 0s 1 slideInFromLeft;
-
+  /* This section calls the opacityEffect animation we defined above */
+  animation: 2s ease-out 0s 1 opacityEffect;
   background: #404040;
   padding: 10px;
 }
@@ -54,18 +54,19 @@ div.static {
   position: static;
 
 }
+/*change color icons when hover*/
 .fa:hover {
     color: #00ffaa !important;
 }
 a:hover{
   color: #00ffaa;
 }
+/*circular photo*/
 img {
-
   border-radius: 20%;
 }
 
-
+/*following is for menu bar*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -87,8 +88,6 @@ img {
   font-size: 25px;
   color: #404040;
   display: block;
-
-
 }
 
 .sidenav a:hover {
@@ -112,10 +111,11 @@ img {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+/*next two added for simplicity when viewing on mobile*/
 @media screen and (min-width: 701px) {
   div.menu{
     font-size: 40px;
-  
 }
 
 @media screen and (max-width: 700px) {
@@ -126,45 +126,43 @@ img {
 </head>
 <body>
 
+<!-- menu ber text -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="index.html"><i class="fa fa-id-card"> </i> Kevin Ruby</a>
   <a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a>
   <a href="education.html"><i class="fa fa-graduation-cap"></i> Education</a>
   <a href="#Skills"><i class ="fa fa-code"></i>  Skills</a>
-  
 </div>
 
 <header>
-<div id="main">
-  <div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span></div>
-  <br/>
-  <br/>
-  <center>
-  <img src="me.jpg" alt="A picture of a handsome man" width="250" height="250">
-  <h1> Kevin <span style="color:#b3ffe6">Ruby</span> </h1>
-  <hr>
-  <div class="static">
+  <div id="main">
+    <div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
+    </div>
+    <br/>
+    <br/>
     <center>
-    <i class="fa fa-ellipsis-h fa-lg"></i>
-    &nbsp;&nbsp;&nbsp;
-    <a style="color:#ffffff" href = "mailto: kevin.ruby@colorado.edu">kevin.ruby@colorado.edu</a>
-    &nbsp;&nbsp;&nbsp;
-    <i class="fa fa-ellipsis-h fa-lg"></i>
-    &nbsp;&nbsp;&nbsp;(303)859-9791
-    </center>
-    <br/>
-    <br/>
+      <img src="me.jpg" alt="A picture of a handsome man" width="250" height="250">
+      <h1> Kevin <span style="color:#b3ffe6">Ruby</span> </h1>
+      <hr>
+      <div class="static">
+        <center>
+          <i class="fa fa-ellipsis-h fa-lg"></i>
+          &nbsp;&nbsp;&nbsp;
+          <a style="color:#ffffff" href = "mailto: kevin.ruby@colorado.edu">kevin.ruby@colorado.edu</a>
+          &nbsp;&nbsp;&nbsp;
+          <i class="fa fa-ellipsis-h fa-lg"></i>
+          &nbsp;&nbsp;&nbsp;(303)859-9791
+        </center>
+        <br/>
+        <br/>
 
-    <a href="https://github.com/kevin-ruby"> <i style="color:#b3ffe6" class="fa fa-github fa-4x"></i></a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <a href="https://www.linkedin.com/in/kevin-ruby/"> <i style="color:#b3ffe6" class="fa fa-linkedin fa-4x"></i></a>
-
-  </center>
-
+        <a href="https://github.com/kevin-ruby"> <i style="color:#b3ffe6" class="fa fa-github fa-4x"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/kevin-ruby/"> <i style="color:#b3ffe6" class="fa fa-linkedin fa-4x"></i></a>
+      </center>
+    </div>
   </div>
-</div>
 </header>
 
 <script>
@@ -172,7 +170,6 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "500px";
   document.getElementById("main").style.opacity = 0.1;
-
 }
 
 function closeNav() {
