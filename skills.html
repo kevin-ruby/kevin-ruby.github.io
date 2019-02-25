@@ -6,7 +6,18 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- for favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Kevin</title>
 <style>
 /*Add opening opacity effect*/
 @keyframes opacityEffect {
@@ -19,7 +30,7 @@
 }
 header {
   /* This section calls the opacityEffect animation we defined above */
-  animation: 2s ease-out 0s 1 opacityEffect;
+  animation: 1s ease-out 0s 1 opacityEffect;
   background: #404040;
   padding: 10px;
 }
@@ -33,8 +44,11 @@ body {
 div.static {
   position: static;
 }
-.fa:hover {
+.fab:hover {
   color: #00ffaa !important;
+}
+.fa:hover {
+    color: #00ffaa !important;
 }
 a:hover{
   color: #00ffaa;
@@ -152,8 +166,8 @@ div.desc{
   }
   div.left-half {
   background-color: #404040;
-  background-image: url("grad_edu.svg");
-  background-size: 800px 650px;
+  background-image: url("img/gears_skills.jpg");
+  background-size: 600px 600px;
   position: fixed;
   left: 0px;
   width: 35%;
@@ -203,6 +217,40 @@ div.desc{
   .sidenav a {font-size: 18px;}
 }
 
+.devicon-git-plain {
+  max-width: 5em;
+}
+
+.tool {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.tool .tooltiptext {
+    font-size: 20px;
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(134, 142, 150, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tool:hover {
+    color:#00ffaa !important;
+}
 </style>
 </head>
 <body>
@@ -212,7 +260,7 @@ div.desc{
     <a href="index.html"><i class="fa fa-id-card"> </i>&nbsp;Kevin Ruby</a>
     <a href="experience.html"><i class="fa fa-briefcase"></i>&nbsp;Experience</a>
     <a href="education.html"><i class="fa fa-graduation-cap"></i>&nbsp;Education</a>
-    <a href="#Skills"><i class ="fa fa-code"></i>&nbsp;Skills</a>
+    <a href="skills.html"><i class ="fa fa-code"></i>&nbsp;Skills</a>
   </div>
   <header>
     <div id="main">
@@ -229,23 +277,38 @@ div.desc{
             </center>
             <br/>
             <br/>
-            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">University of Colorado at Boulder
-            </div>
+            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Languages</div>
+            <br/>
+            <br/>
+            <ul style="text-align: left;"" class="list-inline-item">
+              <i style="color:#B8B8B8; font-size: 60px"  class="devicon-cplusplus-line tool"><span class="tooltiptext">C++</span></i>
+              &nbsp;&nbsp;
+              <i style="color:#B8B8B8; font-size: 60px"  class="devicon-c-line tool"><span class="tooltiptext">C</span></i>
+              &nbsp;&nbsp;
+              <i style="color:#B8B8B8; font-size: 60px"  class="devicon-python-plain tool"><span class="tooltiptext">Python</span></i>
+              &nbsp;&nbsp;
+              <i style="color:#B8B8B8; font-size: 60px" class="fa fa-code tool"><span class="tooltiptext">HTML</span></i>
+              &nbsp;&nbsp;
+              <i style="color:#B8B8B8; font-size: 60px"  class="devicon-javascript-plain tool"><span class="tooltiptext">Java Script</span></i>
+              &nbsp;&nbsp;
+            </ul>
             <hr>
-            <i class="fa fa-terminal fa-5x"></i>
-            <hr>
-            <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="position:static; float:right;">Expected May 2021</span> B.S. Computer Science, College of Engineering </div>
+            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Tools</div>
+            <br/>
+            <br/>
+            <ul class="list-inline-item">
+              <i style="color:#B8B8B8; font-size: 60px" class="fab fa-aws tool"><span class="tooltiptext">Amazon Web Services</span></i>
+              &nbsp;&nbsp;
+              <i style="color:#B8B8B8; font-size: 60px"  class="devicon-linux-plain tool"><span class="tooltiptext">Linux</span></i>
+              &nbsp;&nbsp;
+              <!-- <i style="color:#b3ffe6; font-size: 60px"  class="devicon-mysql-plain"></i> -->
+              <!-- <i style="color:#b3ffe6; font-size: 60px"  class="devicon-nodejs-plain"></i> -->
+              <!-- <i style="color:#b3ffe6; font-size: 60px"  class="devicon-postgresql-plain"></i> -->
+            </ul>
+            
+            
 
-            <div class="desc">
-              <li>Computer Science Technical GPA: 3.850</li>
-            </div>
-            <br/>
-            <br/>
-            <div class="title" style="font-family: 'Poppins', sans-serif;text-align: left;"><span style="float:right;">Expected May 2021</span> Business Minor, Leeds School of Business
-            </div>
-            <div class="desc">
-              <li> Emphasis in Business Analytics</li>
-            </div>
+
           </article>
         </div>
       </section>
