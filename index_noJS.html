@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- for favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Kevin</title>
+<style>
+/*Add opening opacity effect*/
+@keyframes opacityEffect {
+    0% {
+        opacity:-20;
+    }
+    100% {
+        opacity:1;
+    }
+}
+header {
+  /* This section calls the opacityEffect animation we defined above */
+  animation: 1s ease-out 0s 1 opacityEffect;
+  background: #404040;
+  padding: 10px;
+}
+
+
+
+body {
+  font-family: 'Julius Sans One';font-size: 18px;
+  background-color: #404040;
+  color: #F0F8FF;
+
+}
+h1 {
+  font-family: 'Julius Sans One';font-size: 22px;
+  text-align: center;
+  font-size: 80px;
+}
+hr{
+ display: block;
+ margin-top: 1.5em;
+ margin-bottom: 1.5em;
+ margin-left: auto;
+ margin-right: auto;
+ border-style: inset;
+ border-width: 1px;
+ border-color: #b3ffe6;
+}
+div.relative {
+  position: relative;
+  left: 280px;
+}
+div.static {
+  position: static;
+
+}
+/*change color icons when hover*/
+.fa:hover {
+    color: #00ffaa !important;
+}
+a:hover{
+  color: #00ffaa;
+}
+/*circular photo*/
+img {
+  border-radius: 20%;
+}
+
+/*following is for menu bar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b3ffe6;
+  overflow-x: hidden;
+  transition: .1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align:left;
+  position: relative;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #404040;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #cccccc;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*next two added for simplicity when viewing on mobile*/
+@media screen and (min-width: 701px) {
+  div.menu{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  div.menu{
+    font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+<!-- menu ber text -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html"><i class="fa fa-id-card"> </i> Kevin Ruby</a>
+  <a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a>
+  <a href="education.html"><i class="fa fa-graduation-cap"></i> Education</a>
+  <a href="skills.html"><i class ="fa fa-code"></i>  Skills</a>
+  <a href="wave.html"><i class ="fa fa-code"></i>  test</a>
+</div>
+
+<header>
+  <div id="main">
+    <div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
+    </div>
+    <br/>
+    <br/>
+    <center>
+      <img src="img/me.jpg" alt="A picture of a handsome man" width="250" height="250">
+      <h1> Kevin <span style="color:#b3ffe6">Ruby</span> </h1>
+      <hr>
+      <div class="static">
+        <center>
+          <i class="fa fa-ellipsis-h fa-lg"></i>
+          &nbsp;&nbsp;&nbsp;
+          <a style="color:#ffffff" href = "mailto: kevin.ruby@colorado.edu">kevin.ruby@colorado.edu</a>
+          &nbsp;&nbsp;&nbsp;
+          <i class="fa fa-ellipsis-h fa-lg"></i>
+          &nbsp;&nbsp;&nbsp;(303)859-9791
+        </center>
+        <br/>
+        <br/>
+
+        <a href="https://github.com/kevin-ruby"> <i style="color:#b3ffe6" class="fa fa-github fa-4x"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/kevin-ruby/"> <i style="color:#b3ffe6" class="fa fa-linkedin fa-4x"></i></a>
+      </center>
+    </div>
+  </div>
+</header>
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "500px";
+  document.getElementById("main").style.opacity = 0.1;
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.opacity = 1;
+}
+</script>
+
+
+
+
+
+</body>
+</html>
