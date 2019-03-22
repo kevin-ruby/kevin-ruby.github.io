@@ -134,6 +134,14 @@ div.title {
 div.desc{
 
 }
+img {
+  position: absolute;
+  top:10%;
+  left:15%;
+  height: 100%;
+  width: 60%;
+  z-index: 10;
+}
 
 /*next two added for simplicity when viewing on mobile*/
 @media screen and (min-width: 701px) {
@@ -205,19 +213,20 @@ div.desc{
   padding-left: 20px;
   padding-right: 20px;
   }
+  img {
+  position: absolute;
+  top:10%;
+  left:15%;
+  height: 80%;
+  width: 60%;
+  z-index: 10;
+}
 }   
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-img {
-  position: absolute;
-  top:10%;
-  left:15%;
-  height: 100%;
-  width: 60%;
-  z-index: 10;
-}
+
 
 
 </style>
@@ -242,14 +251,13 @@ img {
           <div id="found" style="visibility:visible;">you have found my secret page ...</div>
           <div id="div0" style="visibility:hidden;"> With thousands of hours of scientific research, the cure to hiccups is finaly here.</div>
             <div id="trust" style="visibility:hidden; position: absolute; right:1%; top:1%;">dont trust countdown timers...</div>
-          <div id="div1" style="visibility:hidden;">first, look at this beautiful, elegant dot.</div>
+          <div id="div1" style="visibility:hidden;">first, find the black smaller dot inside of white dot. </div>
           <br>
           <br>
           <br>
           <br>
-          <br>
-          <br>
-          <div id="div2"  style="visibility:hidden;"><i class="fas fa-circle"></i></div>
+         
+          <div id="div2"  style="visibility:hidden;"><i class="fas fa-circle fa-2x"></i></div>
           <br>
           <div id="countdown" style="visibility:hidden;"></div>
 
@@ -274,7 +282,7 @@ img {
     }, 1000);
     var x;
     function myFunction() {
-      x = Math.floor((Math.random() * 10000) + 6000);
+      x = Math.floor((Math.random() * 10000) + 8000);
       document.getElementById("demo").innerHTML = x;
     }
     myFunction();
@@ -285,28 +293,29 @@ img {
     },2200);
     setTimeout(function(){
       document.getElementById('div0').style.visibility = "hidden";
-    },4500);
+    },4700);
     setTimeout(function(){
       document.getElementById('div1').style.visibility = "visible";
-    },4500);
+    },4700);
     setTimeout(function(){
       document.getElementById('div1').style.visibility = "hidden";
-    },6000);
+    },6700);
     setTimeout(function(){
       document.getElementById('div2').style.visibility = "visible";
-    },6000);
+    },6700);
     setTimeout(function(){
       document.getElementById('countdown').style.visibility = "visible";
-    },6000);
+    },6700);
     setTimeout(function(){
       document.getElementById('countdown').style.visibility = "hidden";
     },x);
     setTimeout(function(){
       document.getElementById('random').style.visibility = "visible";
     },x);
+   
      setTimeout(function(){
       document.getElementById('trust').style.visibility = "visible";
-    },x+1000);
+    },x+2000);
 
 
     function openNav() {
