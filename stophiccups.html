@@ -137,7 +137,7 @@ div.desc{
 img {
   position: absolute;
   top:10%;
-  left:15%;
+  left:20%;
   height: 100%;
   width: 60%;
   z-index: 10;
@@ -255,8 +255,7 @@ img {
           <div id="div1" style="visibility:hidden;">first, stare at this white dot! </div>
           <br>
           <br>
-          <br>
-          <br>
+          
          
           <div id="div2"  style="visibility:hidden;"><i class="fas fa-circle fa-2x"></i></div>
           <br>
@@ -285,6 +284,12 @@ img {
     function myFunction() {
       x = Math.floor((Math.random() * 10000) + 8000);
       document.getElementById("demo").innerHTML = x;
+    }
+    if (x<10000){
+      x=x+2500;
+    }
+    else if (x>14000){
+      x=x-2500;
     }
     myFunction();
     setTimeout(function(){
