@@ -6,9 +6,9 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 <!-- for favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
@@ -17,7 +17,7 @@
 <link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-<title>Kevin</title>
+<title>Peace Out Hiccups</title>
 <style>
 /*Add opening opacity effect*/
 @keyframes opacityEffect {
@@ -31,24 +31,22 @@
 header {
   /* This section calls the opacityEffect animation we defined above */
   animation: 1s ease-out 0s 1 opacityEffect;
-  background: #404040;
+  background: black;
   padding: 10px;
 }
 
 body {
   font-family: 'Julius Sans One';
-  background-color: #404040;
-  color: #F0F8FF
+  background-color: black;
+  color: black
 }
+
 
 div.static {
   position: static;
 }
-.fab:hover {
-  color: #00ffaa !important;
-}
 .fa:hover {
-    color: #00ffaa !important;
+  color: #00ffaa !important;
 }
 a:hover{
   color: #00ffaa;
@@ -98,7 +96,7 @@ a:hover{
   padding: 16px;
 }
 
-
+/*following allow page to be slipt for image , text*/
 * {
   box-sizing: border-box;
 }
@@ -139,7 +137,6 @@ div.desc{
 
 /*next two added for simplicity when viewing on mobile*/
 @media screen and (min-width: 701px) {
-  
   div.menu{
     font-size: 20px;
   }
@@ -166,8 +163,8 @@ div.desc{
   }
   div.left-half {
   background-color: #404040;
-  background-image: url("img/gears1.png");
-  background-size: 150%, 300%;
+  background-image: url("img/circleclock_work.svg");
+  background-size: 180% 120%;
   position: fixed;
   left: 0px;
   width: 35%;
@@ -184,7 +181,6 @@ div.desc{
 @media screen and (max-width: 1000px) {
   div.menu{
     font-size: 20px;
-    
   }
   div.example  {
     font-size: 50px;
@@ -210,51 +206,23 @@ div.desc{
   padding-right: 20px;
   }
 }   
-
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-.devicon-git-plain {
-  max-width: 5em;
+img {
+  position: absolute;
+  top:10%;
+  left:15%;
+  height: 100%;
+  width: 60%;
+  z-index: 10;
 }
 
-.tool {
-    position: relative;
-    display: inline-block;
-    
-}
 
-.tool .tooltiptext {
-    font-size: 20px;
-    visibility: hidden;
-    width: auto;
-    background-color: rgba(134, 142, 150, 0.5);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 5px;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tool:hover .tooltiptext {
-    visibility: visible;
-}
-
-.tool:hover {
-    color:#00ffaa !important;
-}
 </style>
 </head>
 <body>
-
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html"><i class="fa fa-id-card"> </i>&nbsp;Kevin Ruby</a>
@@ -264,61 +232,83 @@ div.desc{
     <a style=" position: absolute; left:1px; bottom: 20px;"href="credit.html"><i class ="fa fa-tag"></i>&nbsp;Thanks</a>
   </div>
   <header>
-    <div id="main">
+      <div id="main">
         <div class="menu"style="color: #b3ffe6; cursor:pointer" onclick="openNav()"> &#9776; Menu</div>
+      
+        <section class="container">
+          <br>
+          <br>
+          <br>
+          <div id="found" style="visibility:visible;">you have found my secret page ...</div>
+          <div id="div0" style="visibility:hidden;"> With thousands of hours of scientific research, the cure to hiccups is finaly here.</div>
+            <div id="trust" style="visibility:hidden; position: absolute; right:1%; top:1%;">dont trust countdown timers...</div>
+          <div id="div1" style="visibility:hidden;">first, look at this beautiful, elegant dot.</div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div id="div2"  style="visibility:hidden;"><i class="fas fa-circle"></i></div>
+          <br>
+          <div id="countdown" style="visibility:hidden;"></div>
+
+          <div id ="random" style="visibility:hidden;"><img src="img/kindofscary.png" alt="Italian Trulli"></div>
+
+          <p id="demo" style="visibility:hidden;"></p>
+
         
-      <section class="container">
-        <div class="left-half">
-        </div>
-
-        <div class="right-half">
-          <article>
-            <center>
-              <div class="example">S<span><a style="color:#F0F8FF" href="stophiccups.html">kill<a></span>s</div>
-            </center>
-            <br/>
-            <br/>
-            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Languages</div>
-            <br/>
-            <br/>
-            <ul style="text-align: left;"" class="list-inline-item">
-              <i style="color:#000000; font-size: 60px"  class="devicon-cplusplus-line tool"><span class="tooltiptext">C++</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px"  class="devicon-c-line tool"><span class="tooltiptext">C</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px"  class="devicon-python-plain tool"><span class="tooltiptext">Python</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px" class="fa fa-code tool"><span class="tooltiptext">HTML</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px"  class="devicon-javascript-plain tool"><span class="tooltiptext">Java Script</span></i>
-              &nbsp;&nbsp;
-            </ul>
-            <hr>
-            <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;">Tools</div>
-            <br/>
-            <br/>
-            <ul class="list-inline-item">
-              <i style="color:#000000; font-size: 60px" class="fab fa-aws tool"><span class="tooltiptext">Amazon Web Services</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px"  class="devicon-linux-plain tool"><span class="tooltiptext">Linux</span></i>
-              &nbsp;&nbsp;
-              <i style="color:#000000; font-size: 60px"  class="devicon-mysql-plain tool"><span class="tooltiptext">MySQL</span></i>
-              &nbsp;&nbsp;
-              <!-- <i style="color:#000000; font-size: 60px"  class="devicon-nodejs-plain tool"><span class="tooltiptext">NodeJS</span></i> -->
-              <i style="color:#000000; font-size: 60px"  class="devicon-postgresql-plain tool"><span class="tooltiptext">PostgreSQL</span></i>
-
-            </ul>
-            
-            
-
-
-          </article>
-        </div>
-      </section>
+        </section>
     </div>
   </header>
 
   <script>
+    var timeleft = 16;
+    var downloadTimer = setInterval(function(){
+      document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+      timeleft -= 1;
+      if(timeleft <= 0){
+      clearInterval(downloadTimer);
+      document.getElementById("countdown").innerHTML = "Finished"
+      }
+    }, 1000);
+    var x;
+    function myFunction() {
+      x = Math.floor((Math.random() * 10000) + 6000);
+      document.getElementById("demo").innerHTML = x;
+    }
+    myFunction();
+    setTimeout(function(){
+      document.getElementById('found').style.visibility = "hidden";
+    },2200);setTimeout(function(){
+      document.getElementById('div0').style.visibility = "visible";
+    },2200);
+    setTimeout(function(){
+      document.getElementById('div0').style.visibility = "hidden";
+    },4500);
+    setTimeout(function(){
+      document.getElementById('div1').style.visibility = "visible";
+    },4500);
+    setTimeout(function(){
+      document.getElementById('div1').style.visibility = "hidden";
+    },6000);
+    setTimeout(function(){
+      document.getElementById('div2').style.visibility = "visible";
+    },6000);
+    setTimeout(function(){
+      document.getElementById('countdown').style.visibility = "visible";
+    },6000);
+    setTimeout(function(){
+      document.getElementById('countdown').style.visibility = "hidden";
+    },x);
+    setTimeout(function(){
+      document.getElementById('random').style.visibility = "visible";
+    },x);
+     setTimeout(function(){
+      document.getElementById('trust').style.visibility = "visible";
+    },x+1000);
+
+
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
       document.getElementById("main").style.marginLeft = "35%";
@@ -331,10 +321,5 @@ div.desc{
       document.getElementById("main").style.opacity = 1;
     }
   </script>
-
-
-
-
-
 </body>
 </html>
