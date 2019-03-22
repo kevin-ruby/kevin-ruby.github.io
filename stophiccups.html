@@ -263,7 +263,7 @@ img {
 
           <div id ="random" style="visibility:hidden;"><img src="img/scary_white.jpg" alt="Italian Trulli"></div>
 
-          <p id="demo" style="visibility:hidden;"></p>
+          <p id="demo" style="visibility:visible;"></p>
 
         
         </section>
@@ -271,6 +271,8 @@ img {
   </header>
 
   <script>
+    var x;
+    myFunction();
     var timeleft = 16;
     var downloadTimer = setInterval(function(){
       document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
@@ -280,18 +282,23 @@ img {
       document.getElementById("countdown").innerHTML = "Finished"
       }
     }, 1000);
-    var x;
+    
     function myFunction() {
       x = Math.floor((Math.random() * 10000) + 8000);
-      document.getElementById("demo").innerHTML = x;
     }
-    if (x<10000){
-      x=x+2500;
+    if (x<9000){
+      x=x+500;
     }
-    else if (x>14000){
-      x=x-2500;
+    else if (x>11500){
+      x=11000
+      
     }
-    myFunction();
+    
+    else {
+      x=x;
+    }
+    document.getElementById("demo").innerHTML = x;
+    
     setTimeout(function(){
       document.getElementById('found').style.visibility = "hidden";
     },2200);setTimeout(function(){
