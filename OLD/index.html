@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://kit.fontawesome.com/c5609dc8ce.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- for favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+ <title>Kevin</title>
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+  font-family: "Montserrat";
+  font-size: 12px;
+  text-decoration: none;
+  background: #212121;
+  padding: 4px 8px;
+  color: #f7f7f7;
+}
+a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+  background: #edf3f8;
+  color: #212121;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.imag{
+	position: absolute;
+    left: 50%;
+    bottom: 27%;
+	z-index: 10;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+#particles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  filter: url("#goo");
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #404040;
+}
+
+.title {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Montserrat";
+  text-align: center;
+  width: 60%;
+}
+.title h1 {
+  position: relative;
+  color: #000000;
+  font-weight: 300;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h1 span {
+  font-weight: 600;
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+.title h3 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #5e7283;
+  letter-spacing: 2px;
+}
+.title h4 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  line-height: 2;
+  color: #5e7283;
+  letter-spacing: 2px;
+}
+
+.circle {
+  fill: #b3ffe6;
+}
+.fas:hover {
+    color: #00ffaa !important;
+}
+.fab:hover {
+    color: #00ffaa !important;
+}
+
+svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(0px);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #b3ffe6;
+  overflow-x: hidden;
+  transition: 0s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: 'Julius Sans One';font-size: 18px;
+  text-align:left;
+  position: relative;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #404040;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #cccccc;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+div.menu{
+    position: fixed;
+  	left: 20px;
+  	top: 20px;
+	z-index: 20;
+	font-family: 'Julius Sans One';font-size: 18px;
+}
+/*next two added for simplicity when viewing on mobile*/
+@media screen and (min-width: 701px) {
+ 
+}
+ 
+  
+@media screen and (max-width: 479px) {
+	body {
+  		margin: 0;
+  		padding: 0;
+  		overflow: hidden;
+  		background-color: #404040;
+	}
+	.background {
+		
+    }
+    	.imag{
+	  position: fixed;
+    left: 48%;
+    bottom: 34%;
+	  z-index: 1;
+	  text-align: center;
+}
+    .title {
+  	z-index: 1;
+  	position: fixed;
+  	left: 38%;
+  	top: 40%;
+  	font-family: "Montserrat";
+  	text-align: center;
+  	width: 60%;
+	}
+
+	.title h1 {
+	  position: relative;
+	  color: #000000;
+	  font-weight: 300;
+	  font-size: 60px;
+	  padding: 0;
+	  margin: 0;
+	  line-height: 1;
+	}
+	.title h1 span {
+	  font-weight: 600;
+	  font-size: 60px;
+	  padding: 0;
+	  margin: 0;
+	  line-height: 1;
+	}
+	.title h3 {
+	  text-indent: 40px;
+	  text-align: center;
+	  font-weight: 200;
+	  font-size: 20px;
+	  padding: 0;
+	  margin: 0;
+	  line-height: 2;
+	  color: #5e7283;
+	  letter-spacing: 2px;
+	}
+	.title h4 {
+	  text-indent: 85px;
+	  text-align: center;
+	  font-weight: 200;
+	  font-size: 20px;
+	  padding: 0;
+	  margin: 0;
+	  line-height: 2;
+	  color: #5e7283;
+	  letter-spacing: 2px;
+	}
+  
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 720px) {div#particles {visibility:hidden;}}
+
+
+</style>
+ </head>
+
+ <body>
+ 	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="index.html"><i class="fa fa-id-card"> </i> Kevin Ruby</a>
+  		<a href="experience.html"><i class="fa fa-briefcase"></i> Experience</a>
+  		<a href="education.html"><i class="fa fa-graduation-cap"></i> Education</a>
+      <a href="skills.html"><i class ="fa fa-code"></i>  Skills</a>
+      <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+      
+      <!-- <a style=" position: absolute; left:1px; bottom: 20px;"href="credit.html"><i class ="fa fa-tag"></i>&nbsp;Thanks</a> -->
+	</div>
+<div id="main">
+	<div class="menu"><span style="color: #b3ffe6; cursor:pointer" onclick="openNav()" >&#9776; Menu </span>
+    </div>
+	
+	<div class="background"></div>
+	<div class="title">
+    
+  		<h4>(303)859-9791 </h4>
+  		<h1>KEVIN<span>RUBY</span></h1>
+  		<h3><a style="color:#5e7283" href = "mailto: kevin.ruby@colorado.edu">kevin.ruby@colorado.edu</a></h3>
+  	</div>
+
+	<div class="imag">
+		<a href="https://github.com/kevin-ruby"> <i style="color:#000000" class="fab fa-github fa-4x"></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/kevin-ruby/"> <i style="color:#000000" class="fab fa-linkedin fa-4x"></i>
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="kevinruby-resume.pdf" target="_blank"> <i style="color:#000000" class="fas fa-file-pdf fa-4x"></i></a>
+    </div>
+</div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+ 
+ <script type="text/javascript">
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "500px";
+  document.getElementById("main").style.opacity = 0.5;
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.getElementById("main").style.opacity = 1;
+}
+
+
+ </script>
+ </body>
+</html>

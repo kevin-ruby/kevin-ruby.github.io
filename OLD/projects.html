@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Poppins:100" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/c5609dc8ce.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- for favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+<link rel="manifest" href="favicon_package_v0.16/site.webmanifest">
+<link rel="mask-icon" href="favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>Kevin</title>
+<style>
+/*Add opening opacity effect*/
+@keyframes opacityEffect {
+    0% {
+        opacity:-20;
+    }
+    100% {
+        opacity:1;
+    }
+}
+header {
+  /* This section calls the opacityEffect animation we defined above */
+  animation: 1s ease-out 0s 1 opacityEffect;
+  background: #404040;
+  padding: 10px;
+}
+
+body {
+  font-family: 'Julius Sans One';
+  background-color: #404040;
+  color: #F0F8FF
+}
+
+div.static {
+  position: static;
+}
+.fab:hover {
+  color: #00ffaa !important;
+}
+.fa:hover {
+    color: #00ffaa !important;
+}
+a:hover{
+  color: #00ffaa;
+}
+.responsive {
+  width: 25%;
+  height: 25%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #b3ffe6;
+  overflow-x: hidden;
+  transition: 0.1s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-align:left;
+  position: relative;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #404040;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #cccccc;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+section {
+  color: #fff;
+  text-align: center;
+}
+div {
+  height: 100%;
+}
+
+/* Pattern styles */
+div.container {
+  
+}
+
+div.left-half {
+  
+}
+div.right-half {
+  
+}
+div.menu{
+
+}
+div.example {
+
+}
+div.name {
+
+}
+div.title {
+  padding-bottom: 20px;
+}
+div.desc{
+
+}
+
+/*next two added for simplicity when viewing on mobile*/
+@media screen and (min-width: 701px) {
+  
+  div.menu{
+    font-size: 20px;
+  }
+  div.example  {
+    font-size: 80px;
+  }
+  div.name {
+    font-size: 30px;
+    padding-left: 20px
+  }
+  div.title{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+  div.desc{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 30px
+  }
+  div.container {
+  display: table;
+  width: 100%;
+  }
+  div.left-half {
+  background-color: #404040;
+  background-image: url("img/clip.png");
+  background-size: 170%, 100%;
+  position: fixed;
+  left: 0px;
+  width: 35%;
+  }
+  div.right-half {
+  background-color: #404040;
+  position: absolute;
+  right: 0px;
+  width: 65%;
+  padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  div.menu{
+    font-size: 20px;
+    
+  }
+  div.example  {
+    font-size: 50px;
+  }
+  div.name {
+    font-size: 25px;
+  }
+  div.title{
+    font-size: 15px;
+  }
+  div.desc{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+  div.right-half {
+  background-color: #404040;
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+}   
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.devicon-git-plain {
+  max-width: 5em;
+}
+
+.tool {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.tool .tooltiptext {
+    font-size: 20px;
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(134, 142, 150, 0.5);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tool:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tool:hover {
+    color:#00ffaa !important;
+}
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"><i class="fa fa-id-card"> </i>&nbsp;Kevin Ruby</a>
+    <a href="experience.html"><i class="fa fa-briefcase"></i>&nbsp;Experience</a>
+    <a href="education.html"><i class="fa fa-graduation-cap"></i>&nbsp;Education</a>
+    <a href="skills.html"><i class ="fa fa-code"></i>&nbsp;Skills</a>
+    <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+    <!-- <a style=" position: absolute; left:1px; bottom: 20px;"href="credit.html"><i class ="fa fa-tag"></i>&nbsp;Thanks</a> -->
+  </div>
+  <header>
+    <div id="main">
+      <div class="menu"style="color: #b3ffe6; cursor:pointer" onclick="openNav()"> &#9776; Menu</div>
+      <section class="container">
+          <div class="left-half">
+          </div>
+
+          <div class="right-half">
+            <article>
+              <center>
+              <div class="example">Projects</div>
+              </center>
+              <br/>
+              <br/>
+              <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;"> Ski Base
+              </div>
+              <div class="desc">
+                <li>Full stack developer of web app, Ski Base, designed to help skiers record days on the mountain.</li>
+                <li>Implements SQL  databases to store user accounts with their specific data.</li>
+                <li>Written using HTML/EJS files, while connecting front and back ends using NodeJS.</li>
+                <li><a href="https://ski-tracker.herokuapp.com/login_main" target = "_blank"></i> Ski Base</a></li>
+              </div>
+              <br/>
+              <hr>
+              <div class="name" style="font-family: 'Ubuntu', sans-serif;color: #b3ffe6;text-align: left;"> Forum Analysis
+              </div>
+              <div class="desc">
+                <li>Forum Analysis of a popular article vs scholary article. Hosted on kevinruby9.com</li>
+                <li> <a href="Forum-Analysis_WRTG3035/homepage.html"> Take Me!</a></li>
+              </div>
+            </article>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "35%";
+      document.getElementById("main").style.opacity = 0.1;
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("main").style.opacity = 1;
+    }
+  </script>
+
+
+
+
+
+</body>
+</html>
