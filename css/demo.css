@@ -23,7 +23,9 @@
 *:before {
 	box-sizing: border-box;
 }
-
+img {
+	border-radius: 50%;
+  }
 
 /* Helper classes */
 
@@ -250,6 +252,9 @@ a:hover {
 
 .tool:hover {
     color:#7e9db6 !important;
+}
+i:hover{
+	color:#7e9db6 !important;
 }
 .devicon-git-plain {
   max-width: 5em;
